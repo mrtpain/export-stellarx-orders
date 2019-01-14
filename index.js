@@ -16,7 +16,8 @@ var stellarXRowOrder = [
 		sdex: 'TOKEN',
 		tax: '"Symbol"',
 		overrides: {
-			Mobius: '"MOBI"'
+			Mobius: '"MOBI"',
+			Bitcoin: '"BTC"'
 		}
 	},
 	{
