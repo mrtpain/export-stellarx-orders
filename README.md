@@ -13,7 +13,7 @@ __For Each Coin Traded__
 
 In stellarXRowOrder[2].overrides add each coin used to make trades. The property name is the exact output you see on StellarX order history, the value should be the coins abbreviation.
 
-```console
+```javascript
 var stellarXRowOrder = [
   {
     sdex: 'DATE',
@@ -72,7 +72,7 @@ var stellarXRowOrder = [
 ### 3. Copy Table Headers
 Copy the class name of `thead>tr` by right clicking, inspect element on the first table header, find the `tr` element directly under `thead` and copy the class name. Replace `CLASS_NAME` below. Copy entire code snippet into the same dev tools console and run. The output will be copied to the clipboard. Paste in any text editor.
 
-```console
+```javascript
 var tableHeader = document.getElementsByClassName("CLASS_NAME");
 var headerChildren = tableHeader[0].childNodes;
 
@@ -98,7 +98,7 @@ copy(headerData.join());
 ### 4. Rip Table Body Data
 Find the classname of the `tbody` element. Copy it and replace `CLASS_NAME` in the snippet below. Copy and run the entire snippet in the same dev tools console. Paste results in text editor.
 
-```console
+```javascript
 var tableBody = document.getElementsByClassName("CLASS_NAME");
 var tableRows = tableBody[0].childNodes;
 
